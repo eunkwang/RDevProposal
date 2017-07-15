@@ -1,5 +1,5 @@
 ---
-title: "RDev Proposal"
+title: "RDev 스터디 제안"
 author: "Eunkwang"
 date: '2017 7 9 '
 output: ioslides_presentation
@@ -33,7 +33,7 @@ knitr::opts_chunk$set(echo = FALSE)
     - 프로파일링 사용 방법
     - 배치 처리기
 
-## R 스킬 향상을 위한 스터디
+## R 스킬 향상을 위한 스터디 1/2
 
 * 데이터집계와 재구조화를 위한 스터디
     - 집계(dplyr)
@@ -42,7 +42,7 @@ knitr::opts_chunk$set(echo = FALSE)
     - 배열 처리
         + Loop 처리와 배열 처리의 처리 속도 벤치마킹 하기
 
-## R 스킬 향상을 위한 스터디
+## R 스킬 향상을 위한 스터디 2/2
 
 * 머신러닝
     - 머신러닝 패키지의 모델링 정확도와 속도 벤치마킹 하기

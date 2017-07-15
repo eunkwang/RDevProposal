@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RDev Proposal</title>
+  <title>RDev 스터디 제안</title>
 
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,7 +20,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'RDev Proposal',
+                title: 'RDev 스터디 제안',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -119,7 +119,23 @@
 </article></slide><slide class=''><hgroup><h2>R 스킬 향상을 위한 스터디</h2></hgroup><article  id="r----">
 
 <ul>
-<li>Rstudio 에서 제공하는 기능에 대한 스터디</li>
+<li>Rstudio 에서 제공하는 기능에 대한 스터디
+
+<ul>
+<li>Rstudio Server 사용방법</li>
+<li>DB 연동</li>
+<li>프로젝트 단위 관리</li>
+<li>버전관리 협업 방법</li>
+<li>캐릭터 인코딩</li>
+<li>rmarkdown 사용 방법</li>
+<li>프로파일링 사용 방법</li>
+<li>배치 처리기</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>R 스킬 향상을 위한 스터디 1/2</h2></hgroup><article  id="r-----12">
+
+<ul>
 <li>데이터집계와 재구조화를 위한 스터디
 
 <ul>
@@ -129,21 +145,83 @@
 <ul>
 <li>매트릭스 재표현 하기</li>
 </ul></li>
+<li>배열 처리
+
+<ul>
+<li>Loop 처리와 배열 처리의 처리 속도 벤치마킹 하기</li>
 </ul></li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>R 스킬 향상을 위한 스터디 2/2</h2></hgroup><article  id="r-----22">
+
+<ul>
 <li>머신러닝
 
 <ul>
 <li>머신러닝 패키지의 모델링 정확도와 속도 벤치마킹 하기</li>
+<li>딥러닝(tensorflow with R)</li>
 </ul></li>
-<li>Loop 처리와 배열 처리의 처리 속도 벤치마킹 하기</li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>프로젝트</h2></hgroup><article >
+<li>이론관련 스터디(희망사항)
 
 <ul>
-<li>네이버 연관 검색어 추출 저장 프로그램 만들기(<a href='http://soke.tistory.com/128' title=''>http://soke.tistory.com/128</a>)</li>
-<li>날씨 온도 데이터를 활용한 시계열 anomaly detection</li>
-<li>승패기록 기반의 가위바위보 프로그램 만들기</li>
+<li>PGM(Probability Graph Modeling)</li>
+<li>최적화</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>간단히 진행해볼 수 있는 프로젝트 1/3</h2></hgroup><article  id="-----13">
+
+<ul>
+<li>네이버 연관 검색어 추출 저장 프로그램 만들기(<a href='http://soke.tistory.com/128' title=''>http://soke.tistory.com/128</a>)
+
+<ul>
+<li>필요한 지식 :R, 크롤링, 텍스트 분석, DB</li>
+<li>분석에 필요한 키워드 준비</li>
+<li>네이버 검색 페이지의 페이지 구조 파악</li>
+<li>분석 키워드별로 분석 페이지 크롤링</li>
+<li>집계</li>
+<li>DB 저장석</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>간단히 진행해볼 수 있는 프로젝트 2/3</h2></hgroup><article  id="-----23">
+
+<ul>
+<li>날씨 온도 데이터를 활용한 시계열 anomaly detection
+
+<ul>
+<li>필요한 지식 :R, 시계열데이터분석</li>
+<li>기상 정보 제공 API 활용법 확인</li>
+<li>API를 호출</li>
+<li>수집한 데이터를 시계열 데이터로 변환</li>
+<li>시계열 예측</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>간단히 진행해볼 수 있는 프로젝트 3/3</h2></hgroup><article  id="-----33">
+
+<ul>
+<li>승패기록 기반의 가위바위보 프로그램 만들기
+
+<ul>
+<li>필요한 기술 : R, DB</li>
+<li>데이터가 없을 때 작동하는 가위바위보 알고리즘 개발</li>
+<li>승패 기록을 저장</li>
+<li>경기가 x회 이상 진행되었을 때 승패 기록 기반으로 한 가위바위보 알고리즘 개발</li>
+<li>가위바위보 결과에 따라 승율이 어떻게 계산되는지 시각화</li>
+</ul></li>
+<li>안드로이드폰 Tasker 를 활용한 Push 문자 분석하기
+
+<ul>
+<li>필요한 지식 : R, DB, Tasker</li>
+<li>안드로이드폰에서 분석하고 싶은 문자의 종류를 선정</li>
+<li>Tasker를 이용하여 DB에 관련 데이터를 입력하게 처리
+
+<ul>
+<li>실시간으로 처리할지 아니면 파일 전송 방식을 선택할지 결정</li>
+</ul></li>
+</ul></li>
 </ul></article></slide>
 
 
@@ -156,7 +234,7 @@
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

@@ -1,0 +1,83 @@
+---
+title: "Hitters Exercise"
+author: "eunkwang"
+date: "2017년 7월 24일"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Hitters 데이터 파악
+
+```{r load}
+library(dplyr)
+library(ISLR)
+str(Hitters)
+
+```
+
+참고 : 
+<a href= "https://ko.wikipedia.org/wiki/%EC%95%BC%EA%B5%AC_%EA%B8%B0%EB%A1%9D">야구지표정리</a>
+
+
+## 참고할만한 dplyr 함수
+
+1. arrange()
+2. case_when()
+3. coalesce()  # NA 데이터에 대한 처리
+4. distinct()
+5. filter()
+    + 연산자 : ==, >, >= etc
+    + &, |, !, xor()
+    + is.na() 
+    + between(), near()
+6. select()
+    + select_helpers
+7. mutate()
+8. arrange()
+    + order_by()
+9. groupby()
+10. summarize()
+    + Center: mean(), median()
+    + Spread: sd(), IQR(), mad()
+    + Range: min(), max(), quantile()
+    + Position: first(), last(), nth()
+    + Count: n(), n_distinct()
+    + Logical: any(), all()
+11. summarize_all()
+12. funs()  # 함수 재정의
+13. slice()
+14. join()
+15. lead(), lag()
+16. sample
+    + sample_n()
+    + sample_frac()
+17. rename()
+18. setops
+    + intersect()
+    + union()
+    + union_all()
+    + setdiff()
+    + setequal()
+19. slice()
+20. top_n()
+21. Ranking
+    + row_number(x) 
+    + ntile(x, n) 
+    + min_rank(x) 
+    + dense_rank(x) 
+    + percent_rank(x) 
+    + cume_dist(x)
+99. etc
+    + na_if()
+    + nth()
+    
+## 해결해야 하는 문제와 솔루션
+
+1. 홈런 기록 기준으로 상위 10% 선수들의 평균 연봉을 구하세요.
+2. 연봉순으로 랭크를 부여하고 연봉 기준 전 순위와 연봉차이가 얼마인지 구하세요.
+3. 홈런기준 상위 10%와 Hits 기준 상위 10% 선수 중 일치하는 선수는 몇명인지 구하세요.
+4. 1986년 타수가 해당 선수의 누적 타수 대비 몇 % 비율을 차지하는지 구하세요
